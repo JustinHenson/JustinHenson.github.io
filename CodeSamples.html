@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="finalproject.css">
+<h1 id="code-samples">Code Samples</h1>
+<h3 id="below-are-some-code-samples-that-i-have-written-">Below are some code samples that I have written:</h3>
+<h1 id="example-1">Example 1</h1>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Fizz Buzz<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fizzbuzz</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> display = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'display'</span>);
+    <span class="hljs-keyword">var</span> displayHTML = <span class="hljs-string">""</span>;
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+        displayHTML += <span class="hljs-string">"&lt;p&gt;"</span> + i + <span class="hljs-string">"&lt;/p&gt;"</span>;
+    }
+    display.innerHTML = displayHTML;
+}
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">"fizzbuzz()"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"display"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h1 id="example-2">Example 2</h1>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> math
+choice=<span class="hljs-string">'y'</span>
+<span class="hljs-keyword">while</span>(choice==<span class="hljs-string">'y'</span>or choice==<span class="hljs-string">'Y'</span>):
+   radius=<span class="hljs-keyword">float</span>(input(<span class="hljs-string">"Enter the radius:"</span>))
+   <span class="hljs-keyword">while</span>(radius&lt;0):
+       print(<span class="hljs-string">"Negative radius is invalid"</span>)
+       radius=<span class="hljs-keyword">float</span>(input(<span class="hljs-string">"Enter the radius again :"</span>))
+       print(<span class="hljs-string">"The value entered is invalid, please input a numerical value."</span>)
+   <span class="hljs-keyword">else</span>:
+      height=<span class="hljs-keyword">float</span>(input(<span class="hljs-string">"Enter the height:"</span>))
+   <span class="hljs-keyword">while</span>(height&lt;0):
+       print(<span class="hljs-string">"Negative height is invalid"</span>)
+       height=<span class="hljs-keyword">float</span>(input(<span class="hljs-string">"Enter the height again :"</span>))
+   volume=(math.pi)*pow(radius,2)*height
+   print(<span class="hljs-string">"Volume of the cylinder: "</span>,volume)
+   choice=input(<span class="hljs-string">"Do u want to continue for another calculation if yes enter[y] else enter any key to exit:"</span>)
+</code></pre>
+<p><a href="./index.html">Go back to home page</a></p>

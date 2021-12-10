@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+}
+  
+h1 {
+  color: gold;
+  margin-left: 20px;
+}
+
+#myDiv{
+  background-color: grey;
+  border-style: solid;
+  border-color: gold;
+}
